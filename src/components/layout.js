@@ -14,11 +14,11 @@ const Main = styled.main`
 `;
 
 const Footer = styled.footer`
-  width: 100%;
+  max-width: 100%;
   padding: 20px;
   div {
     margin: 0 auto;
-    width: 960px;
+    max-width: 960px;
   }
 `;
 
