@@ -14,15 +14,11 @@ const Main = styled.main`
 `;
 
 const Footer = styled.footer`
-  position: fixed;
   width: 100%;
-  bottom: 0;
   padding: 20px;
-  background: #505050;
   div {
     margin: 0 auto;
     width: 960px;
-    color: #eee;
   }
 `;
 

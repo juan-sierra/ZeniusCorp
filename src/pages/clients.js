@@ -17,6 +17,7 @@ import styled from "styled-components";
 
 const ClientsWrapper = styled.section`
   min-height: 100vh;
+  margin-bottom: 5em;
   h1 {
     text-align: center;
     margin-bottom: 1.5em;
