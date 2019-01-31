@@ -13,11 +13,12 @@ const typography = new Typography({
       styles: ["400", "400i", "700", "700i"]
     }
   ],
-  headerFontFamily: ["Noto Sans", "serif"],
+  headerFontFamily: ["Noto Sans", "sans-serif"],
   bodyFontFamily: [
     "Noto Sans",
     "San Francisco",
     "Helvetica Neue",
+    "Helvetica",
     "Segoe UI",
     "Helvetica",
     "Arial",
