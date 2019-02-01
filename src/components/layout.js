@@ -1,13 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image"
 
 import Header from "./header";
 import "./layout.css";
 
 import styled from "styled-components";
 
-import HUB from "../images/HUBZONECertified.png";
+import HUB from "../images/HUBZoneCertified.png";
 
 const Main = styled.main`
   padding-top: 0;
