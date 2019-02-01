@@ -7,13 +7,13 @@ import "./layout.css";
 
 import styled from "styled-components";
 
-import HUB from "../images/HUBZONECertified.png"
+import HUB from "../images/HUBZONECertified.png";
 
 const Main = styled.main`
   padding-top: 0;
   max-height: 100vh;
   color: #505050;
-  font-family: Rubik, sans-serif;
+  font-family: 'Rubik', sans-serif;
   line-height: 1.666em;
 `;
 
