@@ -20,15 +20,17 @@ const InnerNav = styled.div`
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: end;
+  font-family: Rubik, sans-serif;
 
 `;
 
 const LogoLink = styled(Link)`
   color: slategray;
   text-decoration: none;
+  width: 50px;
   * {
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 150px;
     @media (max-width: 1000px) {
       width: 100px;
       height: 100px;

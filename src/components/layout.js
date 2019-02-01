@@ -7,20 +7,36 @@ import "./layout.css";
 
 import styled from "styled-components";
 
+import HUB from "../images/HUBZONECertified.png"
+
 const Main = styled.main`
   padding-top: 0;
   max-height: 100vh;
   color: #505050;
+  font-family: Rubik, sans-serif;
+  line-height: 1.666em;
 `;
 
 const Footer = styled.footer`
-  max-width: 100%;
+  margin: 0 auto;
+  max-width: 960px;
   padding: 20px;
-  div {
-    margin: 0 auto;
-    max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 1000px) {
+    display: grid;
   }
 `;
+
+const Copyright = styled.div``
+
+const HubLogo = styled.div`
+  img {
+    height: 100px;
+    width: 220px;
+  }
+`
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -40,7 +56,12 @@ const Layout = ({ children }) => (
           {children}
           <Footer>
             {" "}
-            <div>Copyright © {new Date().getFullYear()} Zenius Corporation</div>
+            <Copyright>
+              <p>Copyright © {new Date().getFullYear()} Zenius Corporation</p>
+            </Copyright>
+            <HubLogo>
+              <img src={HUB}/>
+            </HubLogo>
           </Footer>
         </Main>
       </>
