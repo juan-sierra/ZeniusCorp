@@ -1,43 +1,29 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image"
 
 import Header from "./header";
-import "./layout.css";
+import Footer from "./footer";
+
+import "../css/reset.css";
 
 import styled from "styled-components";
 
-import HUB from "../images/HUBZoneCertified.png";
-
-const Main = styled.main`
-  padding-top: 0;
-  max-height: 100vh;
-  color: #505050;
-  font-family: 'Rubik', sans-serif;
-  line-height: 1.666em;
-`;
-
-const Footer = styled.footer`
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  @media (max-width: 1000px) {
-    display: grid;
+const Container = styled.div`
+  font-family: Nunito;
+  div,
+  main,
+  section,
+  footer {
+    padding: 20px;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0;
   }
 `;
-
-const Copyright = styled.div``
-
-const HubLogo = styled.div`
-  img {
-    height: 100px;
-    width: 220px;
-  }
-`
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -52,19 +38,11 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <Main>
+        <Container>
+          <Header siteTitle={data.site.siteMetadata.title} />
           {children}
-          <Footer>
-            {" "}
-            <Copyright>
-              <p>Copyright © {new Date().getFullYear()} Zenius Corporation</p>
-            </Copyright>
-            <HubLogo>
-              <img src={HUB}/>
-            </HubLogo>
-          </Footer>
-        </Main>
+          <Footer />
+        </Container>
       </>
     )}
   />
