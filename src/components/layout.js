@@ -10,19 +10,7 @@ import "../css/reset.css";
 import styled from "styled-components";
 
 const Container = styled.div`
-  font-family: Nunito;
-  div,
-  main,
-  section,
-  footer {
-    padding: 20px;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    margin: 0;
-  }
+  min-height: 100%;
 `;
 
 const Layout = ({ children }) => (
