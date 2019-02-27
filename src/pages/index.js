@@ -6,9 +6,9 @@ import styled from "styled-components";
 import vision from "../images/vision.svg";
 
 const MainPage = styled.main`
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
   margin-bottom: 1.45em;
   padding: 20px;
@@ -29,9 +29,6 @@ const H1 = styled.h1`
 const HeroImage = styled.div`
   img {
     max-width: 100%;
-  }
-  @media (max-width: 1000px) {
-    margin-top: -10em;
   }
 `;
 

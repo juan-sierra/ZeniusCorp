@@ -6,6 +6,8 @@ import Image from "./image";
 const MainFooter = styled.footer`
   background: #eee;
   padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   @media (max-width: 1000px) {
     display: block;
   }
@@ -14,7 +16,7 @@ const MainFooter = styled.footer`
   }
 `;
 
-const Footer = props => (
+const Footer = () => (
   <MainFooter>
     <div>
       <p>

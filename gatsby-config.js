@@ -83,6 +83,13 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `clientsLogos`,
+        path: `${__dirname}/src/images/clients-logos`
+      }
+    },
+    {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {

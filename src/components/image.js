@@ -23,8 +23,8 @@ const Image = () => (
 );
 
 const Image2 = styled(Img)`
-  max-width: 50%;
-  margin: 0 auto;
+  width: 250px;
+  margin-left: -1em;
 `;
 
 export default Image;
