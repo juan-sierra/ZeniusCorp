@@ -10,11 +10,10 @@ import { data } from "../data/index.js";
 
 const MainAbout = styled.section`
   padding: 20px;
-  min-height: 100vh;
 `;
 
 const AboutHeader = styled.header`
-  min-height: 100vh;
+  min-height: 50vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
@@ -34,7 +33,7 @@ const HeroImage = styled.div`
 `;
 
 const CoreValues = styled.div`
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,7 +60,7 @@ const ValuesLetter = styled.span`
 `;
 
 const TeamWrapper = styled.div`
-  min-height: 100vh;
+  min-height: 50vh;
   h2 {
     text-align: center;
     font-size: 2em;
@@ -116,7 +115,7 @@ const Linked = styled(Linkedin)`
 `;
 
 const Contracts = styled.div`
-  min-height: 100vh;
+  min-height: 50vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;

@@ -4,13 +4,15 @@ import Nav from "./nav";
 // import MobileMenu from "./mobileMenu";
 import styled from "styled-components";
 import { Menu } from "styled-icons/material/";
+import ZeniusLogo from "../images/Logo-4.png";
 
 const MainHeader = styled.header`
-  background: #eee;
+  background: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  border-bottom: 2px solid #eee;
   }
 `;
 
@@ -34,8 +36,11 @@ const OpenBtn = styled(Menu)`
 const Logo = styled(Link)`
   color: inherit;
   font-size: 1.8em;
-  &:hover {
-    color: #24b7db;
+  img {
+    padding: 0;
+    margin-bottom: -0.5em;
+    width: 100px;
+    height: 100px;
   }
 `;
 
@@ -46,7 +51,9 @@ const toggleMenu = () => {
 
 const Header = ({ siteTitle }) => (
   <MainHeader>
-    <Logo to="/">{siteTitle}</Logo>
+    <Logo to="/">
+      <img src={ZeniusLogo} />
+    </Logo>
     <ButtonWrapper>
       <OpenBtn onClick={toggleMenu} />
     </ButtonWrapper>

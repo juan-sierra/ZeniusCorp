@@ -6,7 +6,6 @@ import styled from "styled-components";
 import vision from "../images/vision.svg";
 
 const MainPage = styled.main`
-  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;

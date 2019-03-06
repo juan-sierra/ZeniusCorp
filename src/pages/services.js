@@ -8,11 +8,9 @@ import SyncSVG from "../images/sync.svg";
 
 const ServicesWrapper = styled.div`
   padding: 20px;
-  min-height: 100vh;
 `;
 
 const ServicesIntro = styled.div`
-  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
@@ -31,7 +29,6 @@ const ExpertiseIntro = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
-  min-height: 100vh;
   h2 {
     font-size: 2em;
   }
