@@ -7,58 +7,50 @@ import { Menu } from "styled-icons/material/";
 import ZeniusLogo from "../images/Logo-4.png";
 
 const MainHeader = styled.header`
-  background: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  border-bottom: 2px solid #eee;
-  }
+    width: 100%;
 `;
 
-const ButtonWrapper = styled.div``;
+const HeaderWrapper = styled.div`
+    width: 100%;
 
-const OpenBtn = styled(Menu)`
-  color: #212529;
-  height: 50px;
-  cursor: pointer;
-  @media (min-width: 1000px) {
-    display: none;
-  }
+    img {
+        height: 125px;
+        width: 125px;
+    }
 `;
 
-// const CloseBtn = styled(Close)`
-//   color: #212529;
-//   height: 50px;
-//   display: none;
-// `;
-
-const Logo = styled(Link)`
-  color: inherit;
-  font-size: 1.8em;
-  img {
-    padding: 0;
-    margin-bottom: -0.5em;
-    width: 100px;
-    height: 100px;
-  }
+const LOGOWrapper = styled.div`
+    max-width: 970px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 `;
 
-// function to open and close menu, also to change to the icon to an x when the hamburger icon is clicked..
-const toggleMenu = () => {
-  console.log("this fn is working");
-};
+const NAVWrapper = styled.div`
+    max-width: 970px;
+    margin: auto;
+`;
+
+const DIVIDER = styled.hr`
+    border: none;
+    border-bottom: 2px solid #eee;
+`;
 
 const Header = ({ siteTitle }) => (
-  <MainHeader>
-    <Logo to="/">
-      <img src={ZeniusLogo} />
-    </Logo>
-    <ButtonWrapper>
-      <OpenBtn onClick={toggleMenu} />
-    </ButtonWrapper>
-    <Nav />
-  </MainHeader>
+    <MainHeader>
+        <HeaderWrapper>
+            <LOGOWrapper>
+                <img src={ZeniusLogo} alt="zenius corp logo" />
+                <h2>Job Openings</h2>
+            </LOGOWrapper>
+            <DIVIDER />
+            <NAVWrapper>
+                <Nav />
+            </NAVWrapper>
+            <DIVIDER />
+        </HeaderWrapper>
+    </MainHeader>
 );
 
 export default Header;

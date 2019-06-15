@@ -10,35 +10,36 @@ import "../css/reset.css";
 import styled from "styled-components";
 
 const Container = styled.div`
-  min-height: 100%;
-  color: #2d2926;
+    min-height: 100%;
+    min-width: 100%;
+    color: #2d2926;
 `;
 
 const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
-      <>
-        <Container>
-          <Header siteTitle={data.site.siteMetadata.title} />
-          {children}
-          <Footer />
-        </Container>
-      </>
-    )}
-  />
+    <StaticQuery
+        query={graphql`
+            query SiteTitleQuery {
+                site {
+                    siteMetadata {
+                        title
+                    }
+                }
+            }
+        `}
+        render={data => (
+            <>
+                <Container>
+                    <Header siteTitle={data.site.siteMetadata.title} />
+                    {children}
+                    <Footer />
+                </Container>
+            </>
+        )}
+    />
 );
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+    children: PropTypes.node.isRequired
 };
 
 export default Layout;
